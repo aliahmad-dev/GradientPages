@@ -1,5 +1,7 @@
 # GradientPages
 
+[Nuget Package](https://www.nuget.org/packages/GradientPages/)
+
 ## In MainActivity Initlize the package like this.
 
 ```
