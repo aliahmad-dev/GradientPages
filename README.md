@@ -1,26 +1,26 @@
 # GradientPages
 
-# In MainActivity Initlize the package like this.
+## In MainActivity Initlize the package like this.
 
 ```
 global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 GradientPages.Droid.GradientContentPageRenderer.Init(this);
 ```
 
-# In AppDelegate Initlize the package like this.
+## In AppDelegate Initlize the package like this.
 
 ```
 global::Xamarin.Forms.Forms.Init();
 GradientPages.iOS.GradientContentPageRenderer.Init();
 ```
 
-# In XAML add NameSpace like this
+## In XAML add NameSpace like this
 
 ```
 xmlns:gradient="clr-namespace:GradientPages.Abstractions;assembly=GradientPages.Abstractions"
 ```
 
-Then you can use GradientPage Like this.
+## Then you can use GradientPage Like this.
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
