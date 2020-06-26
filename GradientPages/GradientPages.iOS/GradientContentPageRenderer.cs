@@ -23,7 +23,13 @@ namespace GradientPages.iOS
             SetGradientBackground();
         }
 
-        private void SetGradientBackground()
+        protected override void Dispose(bool disposing)
+        {
+            Element.PropertyChanged -= Control_PropertyChanged;
+            base.Dispose(disposing);
+        }
+
+        private void SetGradientBackground(bool updateLayer = false)
         {
             var control = (GradientContentPage)Element;
 
@@ -67,7 +73,18 @@ namespace GradientPages.iOS
             }
             gradientLayer.Frame = View.Bounds;
             gradientLayer.Colors = new CGColor[] { control.StartColor.ToCGColor(), control.EndColor.ToCGColor() };
-            NativeView.Layer.InsertSublayer(gradientLayer, 0);
+            if(!updateLayer)
+            {
+                NativeView.Layer.InsertSublayer(gradientLayer, 0);
+                control.PropertyChanged += Control_PropertyChanged;
+            }
+            else
+                NativeView.Layer.ReplaceSublayer(NativeView.Layer.Sublayers[0], gradientLayer);
+        }
+
+        private void Control_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            SetGradientBackground(true);
         }
     }
 }

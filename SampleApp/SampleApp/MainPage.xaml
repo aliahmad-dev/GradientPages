@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gradient:GradientContentPage
+    x:Class="SampleApp.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:gradient="clr-namespace:GradientPages.Abstractions;assembly=GradientPages.Abstractions"
+    StartColor="Red"
+    EndColor="Yellow"
+    Direction="ToBottomRight"
+    mc:Ignorable="d">
+    <StackLayout>
+        <!--  Place new controls here  -->
+        <Label
+            TextColor="White"
+            HorizontalOptions="Center"
+            Text="Welcome to Xamarin.Forms!"
+            VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+</gradient:GradientContentPage>
