@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.3">
     <id>GradientPages</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>GradientPages for Xamarin.Forms</title>
     <authors>Ali Ahmad</authors>
     <owners>Ali Ahmad</owners>
@@ -37,14 +37,14 @@
     <!-- Android reference assemblies -->
 <!--     <file src="..\GradientPages\GradientPages.Abstractions\bin\Release\netstandard2.0\GradientPages.Abstractions.dll" target="lib\MonoAndroid"/> -->
 
-    <file src="..\GradientPages\GradientPages.Android\bin\Release\GradientPages.Abstractions.dll" target="lib\MonoAndroid"/>
+<!--     <file src="..\GradientPages\GradientPages.Android\bin\Release\GradientPages.Abstractions.dll" target="lib\MonoAndroid"/> -->
 
     <file src="..\GradientPages\GradientPages.Android\bin\Release\GradientPages.Droid.dll" target="lib\MonoAndroid"/>
 
     <!-- iOS reference assemblies -->
 <!--     <file src="..\GradientPages\GradientPages.Abstractions\bin\Release\netstandard2.0\GradientPages.Abstractions.dll" target="lib\Xamarin.iOS10" /> -->
 
-    <file src="..\GradientPages\GradientPages.iOS\bin\Release\GradientPages.Abstractions.dll" target="lib\Xamarin.iOS10" />
+<!--     <file src="..\GradientPages\GradientPages.iOS\bin\Release\GradientPages.Abstractions.dll" target="lib\Xamarin.iOS10" /> -->
 
     <file src="..\GradientPages\GradientPages.iOS\bin\Release\GradientPages.iOS.dll" target="lib\Xamarin.iOS10" />
 
