@@ -6,7 +6,7 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:gradient="clr-namespace:GradientPages.Abstractions;assembly=GradientPages.Abstractions"
-    StartColor="Red"
+    StartColor="Green"
     EndColor="Yellow"
     Direction="ToBottomRight"
     mc:Ignorable="d">
